@@ -60,7 +60,7 @@ vector<string> tokenize(const string& code) {
                     tokens.push_back(string(1, c)); // Single-character operator
                 }
             } 
-            else if (c == '+' || c == '-' || c == '*' || c == '/' || c == '(' || c == ')') {
+            else if (c == '+' || c == '-' || c == '*' || c == '/' || c == '(' || c == ')' || c == ',') {
                 if (!token.empty()) {
                     tokens.push_back(token);
                     token.clear();
